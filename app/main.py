@@ -2,9 +2,32 @@ import os
 from flask import Flask,jsonify,request
 import time
 from threading import Thread
-import ayman 
+from bgprocess import *
+
 app = Flask(__name__)
 
 @app.route("/")
 def main():
-    return (ayman.say())
+    return "Welcome!"
+
+@app.route('/processBG')
+def return_status():
+    """Return first the response and tie the my_task to a thread"""
+    Rurl = (request.args.get('rurl'))
+    if len(Rurl)>0:
+        Thread(target = my_task,args=(Rurl,)).start()
+    if len(Rurl)==0:
+        return jsonify(str("No images"))
+    Rurl=""
+    return jsonify(str("Images detected"))
+
+def my_task(rurl):
+    print("rurl Before:  "+rurl)
+    bgprocess(rurl)
+    print("rurl After:  "+rurl)
+    rurl=""
+    print("rurl After:  "+rurl)
+    return print('large function completed')
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
