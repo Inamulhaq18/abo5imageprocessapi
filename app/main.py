@@ -2,7 +2,7 @@ import os
 from flask import Flask,jsonify,request
 import time
 from threading import Thread
-from app.bgprocess import *
+#from app.bgprocess import *
 
 print("inside")
 
