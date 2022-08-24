@@ -1,7 +1,7 @@
 gunicorn
 flask
 rembg
-image
+imageio==2.19.2
 requests
 boto3 @ file:///opt/conda/conda-bld/boto3_1649078879353/work
 botocore==1.23.54
