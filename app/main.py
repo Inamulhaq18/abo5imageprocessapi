@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     return "Welcome!"
-
+'''
 @app.route('/processBG')
 def return_status():
     """Return first the response and tie the my_task to a thread"""
@@ -27,4 +27,4 @@ def my_task(rurl):
     print("rurl After:  "+rurl)
     rurl=""
     print("rurl After:  "+rurl)
-    return print('large function completed')
+    return print('large function completed')'''
