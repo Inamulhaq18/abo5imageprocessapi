@@ -2,7 +2,7 @@ import os
 from flask import Flask,jsonify,request
 import time
 from threading import Thread
-import ayman
+from ayman import *
 
 app = Flask(__name__)
 
