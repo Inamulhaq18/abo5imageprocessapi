@@ -2,7 +2,7 @@ import os
 from flask import Flask,jsonify,request
 import time
 from threading import Thread
-from bgprocess import *
+import bgprocess
 
 app = Flask(__name__)
 
