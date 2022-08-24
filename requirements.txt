@@ -2,9 +2,12 @@ gunicorn
 flask
 rembg
 s3
+pillow
+requires.io
 imageio==2.19.2
 requests
 botocore==1.23.54
 mimetypes-magic
 psycopg
+mimelib
 s3fs==0.4.2
