@@ -3,8 +3,9 @@ flask
 rembg
 image
 requests
-s3
-boto
+boto3 @ file:///opt/conda/conda-bld/boto3_1649078879353/work
+botocore==1.23.54
 mimetypes-magic
-s3fs
 psycopg
+s3fs==0.4.2
+s3transfer @ file:///tmp/build/80754af9/s3transfer_1626435152308/work
