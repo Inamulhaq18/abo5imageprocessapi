@@ -1,6 +1,7 @@
 gunicorn
 flask
 rembg
+s3
 imageio==2.19.2
 requests
 botocore==1.23.54
