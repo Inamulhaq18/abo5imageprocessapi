@@ -19,6 +19,7 @@ bleach==5.0.0
 blinker==1.4
 botocore==1.23.54
 Brotli==1.0.9
+boto3
 brotlipy==0.7.0
 cachetools==5.1.0
 certifi==2021.10.8
