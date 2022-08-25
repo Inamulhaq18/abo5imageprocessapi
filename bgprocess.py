@@ -3,7 +3,7 @@ import json
 from PIL import Image
 import requests
 from io import BytesIO
-from s3 import save_uploadedfile
+from abo5s3 import save_uploadedfile
 import boto3
 from botocore.exceptions import ClientError
 from botocore.exceptions import NoCredentialsError
