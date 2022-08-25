@@ -89,6 +89,7 @@ def bgremove(urls):
         img=remove(img) 
         img=addwhitebg(img)
         link=pushtos3(img)
+        del(img)
         Purl.append(link)
     print("bgremove completed")
     return(Purl)   
