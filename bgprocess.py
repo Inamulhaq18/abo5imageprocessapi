@@ -110,7 +110,7 @@ def bgprocess(rurl):
     print(Purl)
     pushdbupdate(Rurls,Purl)
     gc.collect()
-
+    conn.close()
     print("completed operation")
     return("done")
     
