@@ -77,6 +77,7 @@ def pushdbupdate(Rurls,purl):
     purl=",".join(purl)
     curr.execute(sql_select_query, (purl,Rurls,))
     conn.commit()
+    conn.close()
     print("pushdb completed")
 
 
@@ -110,7 +111,7 @@ def bgprocess(rurl):
     print(Purl)
     pushdbupdate(Rurls,Purl)
     gc.collect()
-    conn.close()
+    
     print("completed operation")
     return("done")
     
