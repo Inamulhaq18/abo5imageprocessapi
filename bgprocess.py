@@ -90,6 +90,7 @@ def bgremove(urls):
         img=Image.open(BytesIO(response.content))
         img=remove(img) 
         img=addwhitebg(img)
+        img=Image.rotate(-90)
         link=pushtos3(img)
         del(img)
         Purl.append(link)
