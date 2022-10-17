@@ -52,8 +52,6 @@ def addwhitebg(img):
             img1.paste(img2, offset, mask = img2)
             img1=img1.resize((1000,1000),Image.ANTIALIAS)
             img1.save("converted.png", format="png")
-            del(img2)
-            del(og)
             return(img1)
 
 def pushtos3(img):
@@ -94,7 +92,6 @@ def bgremove(urls):
         img=addwhitebg(img)
         img=img.rotate(-90)
         link=pushtos3(img)
-        del(img)
         Purl.append(link)
     print("bgremove completed")
     return(Purl)   
