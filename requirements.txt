@@ -1,4 +1,4 @@
-rembg
+rembg==2.0.23
 onnx
 psycopg2
 aiohttp==3.8.1
